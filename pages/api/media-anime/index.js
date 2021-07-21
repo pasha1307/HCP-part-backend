@@ -65,7 +65,7 @@ query ($page: Int, $perPage: Int) {
             variables: variables
         })
     };
-    return fetch(url, options)
+    await fetch(url, options)
         .then(resp => {
             return resp.json().then(function (json) {
                 return resp.ok ? json : Promise.reject(json);
