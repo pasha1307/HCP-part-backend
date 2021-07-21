@@ -1,5 +1,13 @@
 import Cors from 'cors'
-
+/**
+ * @swagger
+ * /api/media-anime:
+ *   get:
+ *     description: Returns data with the Page and Media with first 10 items for the type ANIME
+ *     responses:
+ *       200:
+ *         description: OK
+ */
 // Initializing the cors middleware
 const cors = Cors({
     methods: ['GET', 'HEAD'],
